@@ -1,23 +1,14 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      IX LOGIN
+    <ion-title text-center>
+      Welcome
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-item>
-      <ion-input type="text" placeholder="Username"></ion-input>
-    </ion-item>
-    <ion-item>
-
-      <ion-input type="password" placeholder="Password"></ion-input>
-    </ion-item>
-  </ion-list>
-
-  <div padding>
-    <button ion-button block>Sign In</button>
-  </div>
+<ion-content padding>
+  <ion-card padding class="centered-card">
+    <button ion-button block (click)="toLogin()">Sign In</button>
+    <button ion-button block (click)="toRegister()">Register</button>
+  </ion-card>
 </ion-content>
